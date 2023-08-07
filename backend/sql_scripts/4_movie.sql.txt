@@ -1,0 +1,67 @@
+DROP TABLE IF EXISTS movies.movie;
+
+CREATE TABLE movies.movie (
+  movie_id INT NOT NULL AUTO_INCREMENT,
+  title VARCHAR(200) DEFAULT NULL,
+  duration INT DEFAULT NULL,	
+  budget INT DEFAULT NULL,
+  imdb_score DECIMAL(12,2) DEFAULT NULL,
+  release_date INT DEFAULT NULL,
+  revenue BIGINT(20) DEFAULT NULL,
+  CONSTRAINT PKey_movie PRIMARY KEY (movie_id)
+);
+
+
+INSERT INTO movies.movie (movie_id, title, duration, budget, imdb_score, release_date, revenue)
+VALUES
+
+(1, 'The ShawShank Redemption', 142, 25000000, 9.3, 1994, 28884504),
+(2, 'The Godfather', 175, 6000000, 9.2, 1972, 250341816),
+(3, 'The Dark Knight', 152, 185000000, 9.0, 2008, 1006234167),
+(4, 'The Godfather Part 2', 202, 13000000, 9.0, 1974, 47961919),
+(5, '12 Angry Men', 96, 350000, 9.0, 1957, 955),
+(6, 'Schindlers List', 195, 22000000, 9.0, 1994, 322161245),
+(7, 'The Lord of the Rings: The Return of the King', 201, 94000000, 9.0, 2003, 1147633833),
+(8, 'Pulp Ficton', 154, 8000000, 8.9, 1994, 213928762),
+(9, 'The Lord of the Rings: The Fellowship of the Ring', 178, 93000000, 8.8, 2001, 898204420),
+(10, 'The Good, the Bad, and the Ugly', 178, 1200000, 8.8, 1967, 25100000),
+(11, 'Forrest Gump', 142, 55000000, 8.8, 1964, 678226465),
+(12, 'Fight Club', 139, 63000000, 8.8, 1999, 101209702),
+(13, 'The Lord of the Rings: The Two Towers', 179, 94000000, 8.8, 2002, 947944270),
+(14, 'Inception', 148, 160000000, 8.8, 2010, 870110523),
+(15, 'Star Wars: Episode V - The Empire Strikes Back', 124, 18000000, 8.7, 1980, 538375067),
+(16, 'The Matrix', 136, 63000000, 8.7, 1999, 467222728),
+(17, 'Goodfellas', 145, 25000000, 8.7, 1990, 47036784),
+(18, 'One Flew Over the Cuckoos Nest', 133, 3000000, 8.6,1975 , 108981275),
+(19, 'Se7en', 127, 33000000, 8.6, 1995, 327333559),
+(20, 'Its a Wonderful Life', 130, 1180000, 8.6, 1946, 8574081),
+(21, 'Seven Samurai', 207, 931712, 8.6, 1956,346258),
+(22, 'The Silence of the Lambs', 118, 19000000, 8.6, 1991, 272742922),
+(23, 'Saving Private Ryan', 170, 70000000, 8.6, 1998, 482349603),
+(24, 'City of God', 130, 3000000, 8.6, 2004, 30680793),
+(25, 'Interstellar', 169, 165000000, 8.6, 2014, 773430538),
+(26, 'Life is Beautiful', 116, 20000000, 8.6, 1997, 230099013),
+(27, 'The Green Mile', 189, 60000000, 8.6, 1999, 286801374),
+(28, 'Star Wars: Episdoe 5 - A New Hope', 121, 11000000, 8.6, 1977, 775398007),
+(29, 'Terminator 2: Judgement Day', 137, 102000000, 8.6, 1991, 520881154),
+(30, 'Back to the Future', 116, 19000000, 8.5, 1985, 383336762),
+(31, 'Spirited Away', 125, 19000000, 8.6, 2003, 357048900),
+(32, 'The Pianist', 150, 35000000, 8.5, 2003, 120072577),
+(33, 'Psycho', 109, 806947, 8.5, 1960, 32000000),
+(34, 'Les trois mousquetaires: D Artagnan', 121, 45271980, 7.1, 2023, 25242078),
+(35, 'Close', 104, 1100113, 7.8, 2022, 5094934), 
+(36, 'Blue is the Warmest Color', 180, 5290500, 7.7, 2013, 19465835),
+(37, 'The Intouchables', 112, 11945442, 8.5, 2011, 426588510),
+(38, 'Parasite', 132, 11400000, 8.5, 2019, 262676096),
+(39, 'Baahubali: The Beginning', 159, 18026148, 8.0, 2015, 24548038),
+(40, 'Baahubali: The Conclusion', 167, 30586750, 8.2, 2017, 254158390),
+(41, 'Demon Slayer the Movie: Mugen Train', 117, 16000000, 8.2, 2021, 453210959),
+(42, 'Alien', 117, 11000000, 8.5, 1979, 106268522),
+(43, 'Crouching Tiger, Hidden Dragon', 120, 17000000, 7.9, 2001, 213976973),
+(44, 'Ip Man', 106, 11715578, 8.0, 2008, 22108789),
+(45, 'Kung Fu Hustle', 99, 20000000, 7.7, 2005, 104882445),
+(46, 'Rang De Basanti', 167, 2197694, 8.1, 2006, 10800778),
+(47, 'Idiots', 170, 6730119, 8.4, 2009, 60262836);
+
+
+COMMIT;

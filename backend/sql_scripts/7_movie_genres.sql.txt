@@ -1,0 +1,61 @@
+DROP TABLE IF EXISTS movies.movie_genres;
+
+CREATE TABLE movies.movie_genres (
+  movie_id INT DEFAULT NULL,
+  genre_id INT DEFAULT NULL,
+  CONSTRAINT FKey_mg_genre FOREIGN KEY (genre_id) REFERENCES movies.genre (genre_id),
+  CONSTRAINT Fkey_mg_movie FOREIGN KEY (movie_id) REFERENCES movies.movie (movie_id)
+);
+
+
+
+INSERT INTO movies.movie_genres (movie_id, genre_id) VALUES
+(1, 110),
+(2, 112),
+(3, 117),
+(4, 112),
+(5, 110),
+(6, 110),
+(7, 103),
+(8, 110),
+(9, 103),
+(10, 103),
+(11, 108),
+(12, 110),
+(13, 103),
+(14, 117),
+(15, 106),
+(16, 117),
+(17, 110),
+(18, 110),
+(19, 112),
+(20, 110),
+(21, 117),
+(22, 112),
+(23, 113),
+(24, 110),
+(25, 103),
+(26, 108),
+(27, 110),
+(28, 103),
+(29, 117),
+(30, 103),
+(31, 101),
+(32, 110),
+(33, 109),
+(34, 117),
+(35, 110),
+(36, 108),
+(37, 110),
+(38, 105),
+(39, 117),
+(40, 117),
+(41, 103),
+(42, 117),
+(43, 117),
+(44, 117),
+(45, 117),
+(46, 119),
+(47, 119);
+
+COMMIT;

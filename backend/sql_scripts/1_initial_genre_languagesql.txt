@@ -1,0 +1,53 @@
+DROP DATABASE IF EXISTS movies;
+CREATE DATABASE movies;
+
+
+DROP TABLE IF EXISTS movies.genre;
+
+CREATE TABLE movies.genre (
+  genre_id INT NOT NULL,
+  genre_name VARCHAR(30) DEFAULT NULL,
+  CONSTRAINT PKey_genre PRIMARY KEY (genre_id)
+);
+
+INSERT INTO movies.genre (genre_id, genre_name) VALUES
+(101,'Animation'),
+(102,'Mystery'),
+(103,'Adventure'),
+(104,'Science Fiction'),
+(105,'Thriller'),
+(106,'Fantasy'),
+(107,'TV Movie'),
+(108,'Romance'),
+(109,'Horror'),
+(110,'Drama'),
+(111,'Foreign'),
+(112,'Crime'),
+(113,'War'),
+(114,'History'),
+(115,'Music'),
+(116,'Family'),
+(117,'Action'),
+(118,'Documentary'),
+(119,'Comedy');
+
+
+DROP TABLE IF EXISTS movies.language;
+
+CREATE TABLE movies.language (
+  language_id INT NOT NULL AUTO_INCREMENT,
+  language_name VARCHAR(50) DEFAULT NULL,
+  CONSTRAINT PK_language PRIMARY KEY (language_id)
+);
+
+
+INSERT INTO movies.language (language_id, language_name) VALUES
+(1,'English'),
+(2,'French'),
+(3,'Telugu'),
+(4,'Korean'),
+(5,'Japanese'),
+(6,'Chinese'),
+(7,'Hindi');
+
+COMMIT;

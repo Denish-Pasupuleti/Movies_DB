@@ -1,0 +1,57 @@
+DROP TABLE IF EXISTS movies.production_company;
+
+CREATE TABLE movies.production_company (
+  company_id INT NOT NULL,
+  company_name varchar(100) DEFAULT NULL,
+  CONSTRAINT PKey_pcompany PRIMARY KEY (company_id)
+);
+
+
+INSERT INTO movies.production_company (company_id, company_name) VALUES
+(1, 'Castle Rock Entertainment'),
+(2, 'Paramount Pictures'),
+(3, 'Albert S. Ruddy Productions'),
+(4, 'Alfran Productions'),
+(5, 'Warner Bros.'),
+(6, 'Legendary Entertainment'),
+(7, 'Syncopy'),
+(8, 'The Coppola Compnay'),
+(9, 'American Zoetrope'),
+(10, 'Orion-Nova Productions'),
+(11, 'Universal Pictures'),
+(12, 'Amblin Entertainment'),
+(13, 'New Line Cinema'),
+(14, 'WingNut Films'),
+(15, 'The Saul Zaentz Compnay'),
+(16, 'Miramax'),
+(17, 'A Band Apart'),
+(18, 'Jersey Films'),
+(19, 'Constantin Film'),
+(20, 'Fox 2000 Pictures'),
+(21, 'Lucas Film'),
+(22, 'Fantasy Films'),
+(23, 'Liberty Films'),
+(24, 'Toho Compnay'),
+(25, 'Orion Pictures'),
+(26, 'O2 Filmes'),
+(27, 'Melampo Cinematografica'),
+(28, 'Carolco Pictures'),
+(29, 'Studio Ghibli'), 
+(30, 'Heritage Films'),
+(31, 'Shamley Productions'),
+(32, 'M6 Films'),
+(33, 'Menuet Producties'),
+(34, 'Wild Bunch'),
+(35, 'Quad'),
+(36, 'CJ Entertainment'),
+(37, 'Arka Mediaworks'),
+(38, 'Ufotable'),
+(39, 'Pinewood Studios'),
+(40, 'Edko Films'), 
+(41, 'China Film'),
+(42, 'Columbia Pictures Film Production Asia'),
+(43, 'ROMP'),
+(44, 'Vinod Chopra Productions');
+
+
+COMMIT;
